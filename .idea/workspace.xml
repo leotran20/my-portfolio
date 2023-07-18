@@ -4,7 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd94097-7798-4be5-9885-ea9ac266607d" name="Changes" comment="" />
+    <list default="true" id="abd94097-7798-4be5-9885-ea9ac266607d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/logo192.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/Programming1-dark.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/Programming1-light.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/Programming2-dark.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/Programming2-light.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/Programming3-dark.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/Programming3-light.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/docs-dark@tinypng.1bbe175e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/sharedComponents/DarkModeToggleButton/DarkModeToggleButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/sharedComponents/DarkModeToggleButton/DarkModeToggleButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/sharedComponents/NavBar/NavBar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/sharedComponents/NavBar/NavBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About/About.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About/About.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Contact/Contact.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Education/Education.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Projects/Projects.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Projects/Projects.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Resume/Resume.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/theme-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/routes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/variables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/react-app-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reportWebVitals.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +65,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/components/Header.tsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -26,15 +82,30 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Volumes/Data/projects/my-portfolio&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/Data/projects/my-portfolio/src/assets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Volumes/Data/projects/my-portfolio/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tests" />
+      <recent name="$PROJECT_DIR$/src/style" />
+      <recent name="$PROJECT_DIR$/src/common" />
+      <recent name="$PROJECT_DIR$/src/features" />
+      <recent name="$PROJECT_DIR$/src/assets/icons" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -44,11 +115,36 @@
       <option name="presentableId" value="Default" />
       <updated>1689426015321</updated>
       <workItem from="1689426017315" duration="786000" />
-      <workItem from="1689497934370" duration="320000" />
+      <workItem from="1689497934370" duration="3475000" />
+      <workItem from="1689566932338" duration="21863000" />
+      <workItem from="1689647221212" duration="8997000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/common/index.ts</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
