@@ -1,16 +1,12 @@
 import './About.css';
-import ProgrammingPhotoDark from "../../assets/images/Programming1-dark.gif";
-import ProgrammingPhotoLight from "../../assets/images/Programming1-light.gif";
 import {useNavigate} from "react-router-dom";
-import {useState} from "react";
+import { FadedImage } from '../../../common';
 
 const About = () => {
     const navigate = useNavigate();
-    const [darkMode, setDarkMode] = useState(global.darkMode);
-    // @ts-ignore
     return (<div
         className="bg-white dark:bg-slate-800 rounded-lg px-20 py-8 mx-4 my-8 ring-1 ring-slate-900/5 shadow-xl flex flex-col text-left">
-        <div className="flex flex-row space-x-16">
+        <div className="flex lg:flex-row space-x-16 flex-col">
             <div className="flex flex-1 flex-col">
                 <div className="flex">
                     <h3 className="text-slate-900 dark:text-white mt-5 text-6xl font-semibold tracking-wide hover-transition z-10 relative">Hi,
@@ -33,10 +29,8 @@ const About = () => {
                 </p>
                 <button className="see-project-button mt-3" onClick={() => navigate('/projects')}>See Projects</button>
             </div>
-            <div className="flex">
-                <picture>
-                    <img src={global.darkMode ? ProgrammingPhotoDark : ProgrammingPhotoLight} alt="programming1"/>
-                </picture>
+            <div className="flex justify-center">
+                <FadedImage className="flex"/>
             </div>
         </div>
     </div>)

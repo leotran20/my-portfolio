@@ -1,7 +1,7 @@
 import {Navigate, Route, Routes} from "react-router-dom";
 import React from "react";
 
-import {About, Contact, Education, Projects, Resume} from "../components";
+import {About, Contact, Education, Projects, Resume} from "../features/pages";
 
 const createRoutes = () => (
     <Routes>

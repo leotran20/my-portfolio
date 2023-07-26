@@ -1,25 +1,17 @@
 import "./DarkModeToggleButton.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
-import {useState} from "react";
+import {changeTheme} from "../themeSlice";
+import {useAppDispatch, useAppSelector} from "../../../app/hooks";
 
 const DarkModeToggleButton = ({className}: { className?: string }) => {
-    const [darkMode, setDarkMode] = useState(global.darkMode);
-    const toggleDarkMode = (isDark: boolean) => {
-        setDarkMode(isDark);
-        if (isDark) {
-            document.body.classList.add('dark');
-            global.darkMode = true;
-        } else {
-            document.body.classList.remove('dark');
-            global.darkMode = false
-        }
-    }
+    const isDark = useAppSelector(state => state.theme.dark);
+    const dispatch = useAppDispatch();
 
     return (
         <div className={"dark-mode-button inline-flex " + className || ""}>
-            <input type="checkbox" className="checkbox" id="checkbox" checked={darkMode}
-                   onChange={(event) => toggleDarkMode(event.target.checked)}/>
+            <input type="checkbox" className="checkbox" id="checkbox" checked={isDark}
+                   onChange={(event) => dispatch(changeTheme({dark: !isDark}))}/>
             <label htmlFor="checkbox" className="checkbox-label">
                 <FontAwesomeIcon icon={faSun}/>
                 <FontAwesomeIcon icon={faMoon}/>
