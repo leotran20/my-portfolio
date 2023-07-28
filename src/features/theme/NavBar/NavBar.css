@@ -1,4 +1,9 @@
+
 .navbar .active {
     @apply text-sky-500 dark:text-sky-400
+}
+
+.logo a {
+    color: var(--cyan-50) !important;;
 }
 

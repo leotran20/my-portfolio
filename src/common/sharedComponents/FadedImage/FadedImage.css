@@ -1,0 +1,7 @@
+.faded-image-wrapper {
+    height: 40vh;
+}
+
+.faded-in {
+    transition: opacity .2s ease;
+}

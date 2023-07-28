@@ -7,6 +7,7 @@ import './style/index.css';
 import App from './app/App';
 import reportWebVitals from './app/reportWebVitals';
 import {store} from "./app/store";
+import ScrollToTop from "./common/helpers/ScrollToTop";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -15,6 +16,7 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Provider store={store}>
+                <ScrollToTop/>
                 <App/>
             </Provider>
         </BrowserRouter>

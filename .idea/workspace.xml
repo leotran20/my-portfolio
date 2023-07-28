@@ -4,33 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abd94097-7798-4be5-9885-ea9ac266607d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/common/sharedComponents/FadedImage/FadedImage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/sharedComponents/FadedImage/FadedImage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/pages/Projects/Projects.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/theme/themeSlice.ts" afterDir="false" />
+    <list default="true" id="abd94097-7798-4be5-9885-ea9ac266607d" name="Changes" comment="- implement responsive&#10;- implement scroll to top">
+      <change afterPath="$PROJECT_DIR$/src/common/helpers/ScrollToTop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/sharedComponents/ScrollToTopButton/ScrollToTopButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/sharedComponents/ScrollToTopButton/ScrollToTopButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/pages/Layout/Layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/pages/Layout/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/sharedComponents/DarkModeToggleButton/DarkModeToggleButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/DarkModeToggleButton/DarkModeToggleButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/sharedComponents/DarkModeToggleButton/DarkModeToggleButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/DarkModeToggleButton/DarkModeToggleButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/sharedComponents/NavBar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/NavBar/NavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/sharedComponents/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/NavBar/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/pages/About/About.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/pages/About/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/pages/Contact/Contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Education/Education.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/pages/Education/Education.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/Projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/hooks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/pages/Projects/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Resume/Resume.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/pages/Resume/Resume.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/pages/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/sharedComponents/FadedImage/FadedImage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/sharedComponents/FadedImage/FadedImage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/sharedComponents/FadedImage/FadedImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/sharedComponents/FadedImage/FadedImage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/pages/About/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/pages/About/About.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/pages/About/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/pages/About/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/theme/NavBar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/NavBar/NavBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/theme/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/theme/NavBar/NavBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/theme-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/routes.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Volumes/Data/projects/my-portfolio/src/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/Data/projects/my-portfolio&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Volumes/Data/projects/my-portfolio/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
@@ -98,8 +87,20 @@
       <workItem from="1689929630535" duration="637000" />
       <workItem from="1690002600315" duration="604000" />
       <workItem from="1690275986955" duration="12171000" />
-      <workItem from="1690341270304" duration="1893000" />
+      <workItem from="1690341270304" duration="2238000" />
+      <workItem from="1690369720894" duration="5901000" />
+      <workItem from="1690461125853" duration="1356000" />
+      <workItem from="1690522860839" duration="7365000" />
     </task>
+    <task id="LOCAL-00001" summary="integrate redux toolkit">
+      <option name="closed" value="true" />
+      <created>1690369677995</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690369677995</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +116,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="integrate redux toolkit" />
+    <MESSAGE value="- implement responsive&#10;- implement scroll to top" />
+    <option name="LAST_COMMIT_MESSAGE" value="- implement responsive&#10;- implement scroll to top" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

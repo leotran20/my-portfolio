@@ -66,3 +66,7 @@
     width: 250%;
 }
 
+.main-content {
+    flex: 2;
+}
+

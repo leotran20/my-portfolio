@@ -2,34 +2,29 @@ import React from 'react';
 
 import './App.css';
 import '../style/variables.css';
-import background from "../assets/images/docs-dark@tinypng.1bbe175e.png";
-import {CONSTANTS} from "../common";
-import createRoutes from "../routes/routes";
-import NavBar from "../features/theme/NavBar/NavBar";
 import {useAppSelector} from "./hooks";
+import Layout from "../features/pages/Layout/Layout";
+import {Navigate, Route, Routes} from "react-router-dom";
+import {About, Contact, Education, Projects, Resume} from "../features/pages";
 
 function App() {
 
-    const routes = createRoutes();
     const isDark = useAppSelector(state => state.theme.dark);
 
     return (
         <div className={`App ${isDark ? 'dark' : ''}`}>
-            <div
-                className="App h-screen antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
-                <NavBar menuItems={CONSTANTS.MENU_ITEMS}/>
+            <Routes>
+                <Route path="/" element={<Layout/>}>
+                    <Route path="/about" element={<About/>}/>
+                    <Route path="/projects" element={<Projects/>}/>
+                    <Route path="/education" element={<Education/>}/>
+                    <Route path="/resume" element={<Resume/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
+                    <Route path="*" element={<About/>}/>
+                    <Route path="" element={<Navigate to="/about"/>}/>
+                </Route>
+            </Routes>
 
-                <div className="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
-                    <div className="w-[108rem] flex-none flex justify-end">
-                        <picture>
-                            <img src={background} alt="background"
-                                 className="w-[90rem] flex-none max-w-none hidden dark:block" decoding="async"/>
-                        </picture>
-                    </div>
-                </div>
-
-                {routes}
-            </div>
         </div>
     );
 }
