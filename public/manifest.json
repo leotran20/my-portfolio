@@ -3,17 +3,17 @@
   "name": "Welcome to my portfolio",
   "icons": [
     {
-      "src": "src/assets/icons/favicon.ico",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "src/assets/icons/logo192.ico",
+      "src": "logo192.ico",
       "type": "image/x-icon",
       "sizes": "192x192"
     },
     {
-      "src": "src/assets/icons/logo.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }

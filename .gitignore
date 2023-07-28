@@ -132,6 +132,8 @@ dist
 .pnp.*
 
 # User-specific stuff:
+.idea/
+.idea/Project_Default.xml
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/dictionaries
