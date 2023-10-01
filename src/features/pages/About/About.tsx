@@ -1,6 +1,6 @@
 import './About.css';
-import {useNavigate} from "react-router-dom";
-import { FadedImage } from '../../../common';
+import {useNavigate} from 'react-router-dom';
+import {FadedImage} from '../../../common';
 
 const About = () => {
     const navigate = useNavigate();
@@ -10,7 +10,7 @@ const About = () => {
             <div className="flex main-content flex-col">
                 <div className="flex">
                     <h3 className="text-slate-900 dark:text-white mt-5 text-6xl font-semibold tracking-wide hover-transition z-10 relative">Hi,
-                        I'm Leo</h3>
+                        I&apos;m Leo</h3>
                 </div>
                 <p className="text-slate-500 dark:text-slate-400 mt-2 text-lg">
                     Welcome to my portfolio website! Here, you will find a curated collection of my creative endeavors
@@ -18,7 +18,7 @@ const About = () => {
                     professional achievements. Through a blend of captivating visuals, compelling storytelling, and
                     innovative
                     design, I aim to take you on a journey through my diverse range of skills and experiences. Whether
-                    it's
+                    it&apos;s
                     my
                     captivating graphic designs, thought-provoking illustrations, or engaging web development projects,
                     each
@@ -33,7 +33,7 @@ const About = () => {
                 <FadedImage className="flex"/>
             </div>
         </div>
-    </div>)
-}
+    </div>);
+};
 
 export default About;

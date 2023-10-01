@@ -11,7 +11,7 @@ const DarkModeToggleButton = ({className}: { className?: string }) => {
     return (
         <div className={"dark-mode-button inline-flex " + className || ""}>
             <input type="checkbox" className="checkbox" id="checkbox" checked={isDark}
-                   onChange={(event) => dispatch(changeTheme({dark: !isDark}))}/>
+                   onChange={() => dispatch(changeTheme({dark: !isDark}))}/>
             <label htmlFor="checkbox" className="checkbox-label">
                 <FontAwesomeIcon icon={faSun}/>
                 <FontAwesomeIcon icon={faMoon}/>

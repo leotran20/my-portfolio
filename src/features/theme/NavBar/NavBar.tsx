@@ -1,6 +1,6 @@
-import {Link, NavLink} from "react-router-dom";
+import {Link, NavLink} from 'react-router-dom';
 import './NavBar.css';
-import DarkModeToggleButton from "../DarkModeToggleButton/DarkModeToggleButton";
+import DarkModeToggleButton from '../DarkModeToggleButton/DarkModeToggleButton';
 
 const NavBar = ({menuItems}: { menuItems: { title: string, url: string }[] }) => {
     return (
@@ -28,7 +28,7 @@ const NavBar = ({menuItems}: { menuItems: { title: string, url: string }[] }) =>
                 </div>
             </nav>
         </div>
-    )
-}
+    );
+};
 
 export default NavBar;
