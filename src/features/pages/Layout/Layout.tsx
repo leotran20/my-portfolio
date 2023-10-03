@@ -1,14 +1,13 @@
-import "./Layout.css";
+import './Layout.css';
 
-import {Outlet} from "react-router-dom";
-import NavBar from "../../theme/NavBar/NavBar";
-import {CONSTANTS} from "../../../common";
-import background from "../../../assets/images/docs-dark@tinypng.1bbe175e.png";
-import React from "react";
-import ScrollToTopButton from "../../../common/sharedComponents/ScrollToTopButton/ScrollToTopButton";
+import {Outlet} from 'react-router-dom';
+import NavBar from '../../theme/NavBar/NavBar';
+import {CONSTANTS} from '../../../common';
+import background from '../../../assets/images/docs-dark@tinypng.1bbe175e.png';
+import React from 'react';
+import ScrollToTopButton from '../../../common/sharedComponents/ScrollToTopButton/ScrollToTopButton';
 
 function Layout() {
-
     return (
         <div
             className="App min-h-screen h-full antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">

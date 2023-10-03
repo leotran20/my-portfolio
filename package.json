@@ -14,6 +14,7 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/react-redux": "^7.1.25",
+    "axios": "^1.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
@@ -27,6 +28,7 @@
     "build": "react-scripts build",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "test": "react-scripts test",
+    "test:watch": "react-scripts test --watchAll=false --bail",
     "eject": "react-scripts eject",
     "prepare": "husky install"
   },

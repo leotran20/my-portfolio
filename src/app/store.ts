@@ -1,10 +1,12 @@
 import {configureStore} from "@reduxjs/toolkit";
-import themeReducer from "../features/theme/themeSlice";
+import globalReducer from "../features/slices/globalSlice";
+import infoSlice from '../features/slices/infoSlice';
 
 
 export const store = configureStore({
     reducer: {
-        theme: themeReducer
+        global: globalReducer,
+        info: infoSlice
     },
 });
 

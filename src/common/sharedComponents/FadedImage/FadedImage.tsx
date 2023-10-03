@@ -5,7 +5,7 @@ import ProgrammingPhotoLight from "../../../assets/images/Programming1-light.gif
 import {useAppSelector} from "../../../app/hooks";
 
 const FadedImage = (props: { className?: string }) => {
-    const isDark = useAppSelector(state => state.theme.dark);
+    const isDark = useAppSelector(state => state.global.darkMode);
     return (
         <div className={`${props.className || ""} faded-image-wrapper relative w-full lg:!h-full`}>
             <picture className={`flex justify-center absolute w-full h-full faded-in opacity-0 ${isDark ? "opacity-100" : ""}`}>
