@@ -29,7 +29,7 @@ const NavBar = ({menuItems}: { menuItems: { title: string, url: string }[] }) =>
                         <ul className="flex flex-col md:flex-row fixed md:relative md:space-x-8 mt-12 md:mt-0 w-screen md:w-fit md:gap-9 menu">
                             {menuItems!.map(item => (
                                 <li key={item.url}
-                                    className="md:!h-10 w-full md:w-max m-0 p-0 mt-2 md:mt-0 cursor-pointer overflow-hidden md:overflow-visible">
+                                    className="md:!h-10 w-full md:w-max m-0 p-0 mt-2 md:mt-0 cursor-pointer opacity-0 md:opacity-100">
                                     <Link className="self-center"
                                           onClick={() => dispatch(toggleNavigation())}
                                           onSetActive={() =>  window.history.pushState({ section: item.url }, '', `#${item.url}`)}

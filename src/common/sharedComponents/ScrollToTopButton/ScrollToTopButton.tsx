@@ -21,7 +21,7 @@ const ScrollToTopButton = ({top = 40}: { top?: number }) => {
         return (
             <CSSTransition
                 nodeRef={nodeRef} in={visible} timeout={500} classNames="scroll-up">
-                <button ref={nodeRef} className="scroll-up-btn" type="button" onClick={() => animateScroll.scrollToTop({
+                <button ref={nodeRef} className="scroll-up-btn right-5 bottom-5 md:right-9 md:bottom-9" type="button" onClick={() => animateScroll.scrollToTop({
                     duration: 500,
                     smooth: true,
                     offset: -90
