@@ -3,11 +3,28 @@
     z-index: 2;
     cursor: pointer;
     border-radius: 7px;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     right: 40px;
     bottom: 40px;
-    box-shadow: 0 9px 25px 0 rgba(132, 128, 177, 0.28);
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
     border: none;
-    background-color: white;
+    background-color: transparent;
+    opacity: 0;
+}
+
+.scroll-up-btn.scroll-up-enter, .scroll-up-btn.scroll-up-exit-done {
+    opacity: 0;
+}
+.scroll-up-btn.scroll-up-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.scroll-up-btn.scroll-up-exit, .scroll-up-btn.scroll-up-enter-done {
+    opacity: 1;
+}
+.scroll-up-btn.scroll-up-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
 }

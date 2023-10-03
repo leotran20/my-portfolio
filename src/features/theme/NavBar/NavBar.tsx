@@ -1,4 +1,4 @@
-import {Link, NavLink} from 'react-router-dom';
+import {Link} from 'react-scroll';
 import './NavBar.css';
 import DarkModeToggleButton from '../DarkModeToggleButton/DarkModeToggleButton';
 import {useAppDispatch, useAppSelector} from '../../../app/hooks';
@@ -15,21 +15,29 @@ const NavBar = ({menuItems}: { menuItems: { title: string, url: string }[] }) =>
                 <div
                     className="flex justify-center md:justify-between py-4 border-b border-slate-900/10 px-4 lg:border-0 dark:border-slate-300/10 mx-0 lg:mx-0">
                     <div className="logo flex animate-pulse">
-                        <NavLink className="px-1.5 rounded-full self-center" to={'/about'}>
+                        <Link className="cursor-pointer px-1.5 rounded-full self-center" to="about" offset={-90} smooth={true} duration={500}>
                             <p className="text-md">LT</p>
-                        </NavLink>
+                        </Link>
 
                     </div>
                     <div className="flex flex-1 justify-end">
-                        <input id="menu-toggle" type="checkbox" checked={isMenuOpen}  onChange={() => dispatch(toggleNavigation())}/>
+                        <input id="menu-toggle" type="checkbox" checked={isMenuOpen}
+                               onChange={() => dispatch(toggleNavigation())}/>
                         <label className="menu-button-container flex md:hidden" htmlFor="menu-toggle">Menu
                             <span className="menu-button"></span>
                         </label>
                         <ul className="flex flex-col md:flex-row fixed md:relative md:space-x-8 mt-12 md:mt-0 w-screen md:w-fit md:gap-9 menu">
                             {menuItems!.map(item => (
                                 <li key={item.url}
-                                    className="hover:text-sky-500 dark:hover:text-sky-400 md:!h-10 w-full md:w-max m-0 p-0 mt-2 md:mt-0">
-                                    <Link className="self-center" onClick={() => dispatch(toggleNavigation())}
+                                    className="md:!h-10 w-full md:w-max m-0 p-0 mt-2 md:mt-0 cursor-pointer">
+                                    <Link className="self-center"
+                                          onClick={() => dispatch(toggleNavigation())}
+                                          onSetActive={() =>  window.history.pushState({ section: item.url }, '', `#${item.url}`)}
+                                          activeClass="active"
+                                          spy={true}
+                                          smooth={true}
+                                          duration={500}
+                                          offset={-90}
                                           to={item.url}>{item.title}</Link>
                                 </li>
                             ))}

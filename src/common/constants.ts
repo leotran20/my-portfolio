@@ -1,9 +1,13 @@
 const CONSTANTS = {
 
-     MENU_ITEMS: [
+    MENU_ITEMS: [
         {
             title: 'About Me',
             url: 'about'
+        },
+        {
+            title: 'My Skills',
+            url: 'skills'
         },
         {
             title: 'Projects',
@@ -22,6 +26,6 @@ const CONSTANTS = {
             url: 'contact'
         }
     ]
-}
+};
 
 export default CONSTANTS;

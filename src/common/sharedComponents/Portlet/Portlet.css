@@ -1,0 +1,14 @@
+.title {
+    text-transform: capitalize;
+    position: relative;
+}
+
+.title::after {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 60px;
+    height: 2px;
+    content: "";
+    background-color: var(--cyan-50);
+}

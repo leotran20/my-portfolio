@@ -1,6 +1,9 @@
 
-.navbar .active {
-    @apply text-sky-500 dark:text-sky-400
+.navbar {
+    height: var(--header-height);
+}
+.navbar .active, .menu > li:hover {
+    color: var(--cyan-200);
 }
 
 .logo a {
@@ -21,6 +24,7 @@
     overflow: hidden;
     font-weight: 700;
 }
+
 
 .menu > li a {
     display: flex;

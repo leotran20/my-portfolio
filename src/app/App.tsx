@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
+import {Element} from 'react-scroll';
 
 import './App.css';
 import '../style/variables.css';
 import {useAppDispatch, useAppSelector} from './hooks';
 import Layout from '../features/pages/Layout/Layout';
-import {Navigate, Route, Routes} from 'react-router-dom';
-import {About, Contact, Education, Projects, Resume} from '../features/pages';
+import {About, Contact, Education, Projects, Resume, Skills} from '../features/pages';
 import useRequest from '../hooks/use-request';
 import {setData} from '../features/slices/infoSlice';
 
@@ -28,17 +28,26 @@ function App() {
     }, []);
     return (
         <div className={`App ${isDark ? 'dark' : ''}`}>
-            <Routes>
-                <Route path="/" element={<Layout/>}>
-                    <Route path="/about" element={<About/>}/>
-                    <Route path="/projects" element={<Projects/>}/>
-                    <Route path="/education" element={<Education/>}/>
-                    <Route path="/resume" element={<Resume/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
-                    <Route path="*" element={<About/>}/>
-                    <Route path="" element={<Navigate to="/about"/>}/>
-                </Route>
-            </Routes>
+            <Layout>
+                <Element name="about" className="element">
+                    <About/>
+                </Element>
+                <Element name="skills" className="element">
+                    <Skills/>
+                </Element>
+                <Element name="projects" className="element">
+                    <Projects/>
+                </Element>
+                <Element name="education" className="element">
+                    <Education/>
+                </Element>
+                <Element name="resume" className="element">
+                    <Resume/>
+                </Element>
+                <Element name="contact" className="element">
+                    <Contact/>
+                </Element>
+            </Layout>
 
         </div>
     );

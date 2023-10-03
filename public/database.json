@@ -1,6 +1,33 @@
 {
   "heading": "Hi, I'm Leo",
   "description": "Welcome to my portfolio website! Here, you will find a curated collection of my creative endeavors and professional achievements. Through a blend of captivating visuals, compelling storytelling, and innovative design, I aim to take you on a journey through my diverse range of skills and experiences. Whether it's my captivating graphic designs, thought-provoking illustrations, or engaging web development projects, each piece in my portfolio reflects my passion for creativity and dedication to excellence. Join me as we explore the intersection of art and technology, where imagination knows no bounds. Get ready to be inspired, delighted, and intrigued as you delve into my world of limitless possibilities.",
+  "contact": [
+    {
+      "name": "Email",
+      "icon": "https://img.icons8.com/emoji/96/e-mail.png",
+      "title": "leotran2au@gmail.com",
+      "link": "mailto:leotran2au@gmail.com"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "https://img.icons8.com/fluency/96/linkedin.png",
+      "title": "Leo Tran",
+      "link": "https://www.linkedin.com/in/leotran20/"
+    },
+    {
+      "name": "GitHub",
+      "icon": "https://img.icons8.com/fluency/96/github.png",
+      "title": "Leo Tran",
+      "link": "https://github.com/leotran20"
+    },
+    {
+      "name": "Contact Form",
+      "icon": "https://img.icons8.com/plasticine/100/form.png",
+      "title": "Go to Contact Form",
+      "internalPage": true,
+      "link": "/#contact"
+    }
+  ],
   "skills": [
     {
       "name": "HTML5",
@@ -26,11 +53,6 @@
       "name": "JavaScript",
       "type": "frontend",
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-    },
-    {
-      "name": "TypeScript",
-      "type": "frontend",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
     },
     {
       "name": "TypeScript",
@@ -86,6 +108,12 @@
       "name": "npm",
       "type": "development",
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+    },
+    {
+      "name": "pnpm",
+      "type": "development",
+      "storedLocallyLogo": true,
+      "logo": "icons/pnpm-standard.svg"
     },
     {
       "name": "IntelliJ IDEA",
