@@ -1,9 +1,10 @@
+import {scroller} from 'react-scroll';
+
 import './About.css';
 import {FadedImage} from '../../../common';
 import Portlet from '../../../common/sharedComponents/Portlet/Portlet';
 import {useAppSelector} from '../../../app/hooks';
-import {scroller} from 'react-scroll';
-
+import arrowDown from '../../../assets/icons/icons8-double-down.svg';
 
 const About = () => {
     const data = useAppSelector(state => state.info.data);
@@ -31,14 +32,15 @@ const About = () => {
                             <b>{contact.name}</b>
                             {
                                 contact.internalPage ?
-                                    <a className="underline text-blue-400" href="javascript:0"
+                                    <a className="underline text-blue-400 cursor-pointer"
                                        onClick={() => scroller.scrollTo('contact', {
                                            smooth: true,
                                            duration: 500,
                                            spy: true
                                        })}>{contact.title}</a>
                                     :
-                                    <a className="underline text-blue-400" target="_blank" rel="noreferrer" href={contact.link}>{contact.title}</a>
+                                    <a className="underline text-blue-400" target="_blank" rel="noreferrer"
+                                       href={contact.link}>{contact.title}</a>
                             }
                         </li>
                     ))}
@@ -47,11 +49,24 @@ const About = () => {
                     duration: 500,
                     spy: true,
                     smooth: true,
-                    offset: -60
+                    offset: -90
                 })}>See My
                     Projects
                 </button>
             </Portlet>
+            <div className="flex justify-center items-center flex-col">
+                <p>Explore more about me</p>
+                <button type="button"
+                        className="h-12 w-12 mt-2 animate-bounce"
+                        onClick={() => scroller.scrollTo('skills', {
+                            smooth: true,
+                            duration: 500,
+                            spy: true,
+                            offset: -90
+                        })}>
+                    <img src={arrowDown} alt="scroll down"/>
+                </button>
+            </div>
         </div>);
 };
 

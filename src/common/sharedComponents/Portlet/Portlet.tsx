@@ -22,7 +22,7 @@ const Portlet = ({children, className, title, subtitle, sideComponent}: Props) =
                         </div> :
                         null}
                     {subtitle ?
-                        <p className="mt-5">{subtitle}</p>
+                        <p className="text-slate-500 dark:text-slate-400 mt-5 text-lg">{subtitle}</p>
                         : null}
                     {children}
                 </div>

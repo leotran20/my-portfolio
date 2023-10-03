@@ -2,8 +2,31 @@
 .navbar {
     height: var(--header-height);
 }
+
+.dark .navbar .active, .dark .menu > li:hover {
+    /*color: var(--cyan-200);*/
+    color: #fff;
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
 .navbar .active, .menu > li:hover {
-    color: var(--cyan-200);
+    color: #333; /* Adjust the text color to a darker color */
+    text-shadow:
+            0 0 5px #333, /* Slight shadow for readability */
+            0 0 10px #333,
+            0 0 20px #333,
+            0 0 40px #00f, /* Light blue shadow for light mode */
+            0 0 80px #00f,
+            0 0 90px #00f,
+            0 0 100px #00f,
+            0 0 150px #00f;
 }
 
 .logo a {
@@ -21,7 +44,6 @@
 .menu > li {
     display: flex;
     justify-content: center;
-    overflow: hidden;
     font-weight: 700;
 }
 

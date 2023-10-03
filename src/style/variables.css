@@ -1,8 +1,14 @@
 :root {
-    --cyan-50: hsl(200 100% 80%);
+    --cyan-50: #99DDFFFF;
     --cyan-100: #70bdca;
     --cyan-200: #2c9caf;
     --cyan-300: #268391;
+
+    --primary-color: #2c9cb1;
+    --background-color-1: #0f172a;
+    --background-color-2: #1e293b;
+    --text-color: #F8F4E3;
+    --text-color-2: #92a1b6;
 
     --header-height: 60px;
 }

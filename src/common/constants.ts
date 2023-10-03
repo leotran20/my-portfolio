@@ -14,10 +14,6 @@ const CONSTANTS = {
             url: 'projects'
         },
         {
-            title: 'Education',
-            url: 'education'
-        },
-        {
             title: 'Resume',
             url: 'resume'
         },

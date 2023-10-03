@@ -5,7 +5,7 @@ import './App.css';
 import '../style/variables.css';
 import {useAppDispatch, useAppSelector} from './hooks';
 import Layout from '../features/pages/Layout/Layout';
-import {About, Contact, Education, Projects, Resume, Skills} from '../features/pages';
+import {About, Contact, Projects, Resume, Skills} from '../features/pages';
 import useRequest from '../hooks/use-request';
 import {setData} from '../features/slices/infoSlice';
 
@@ -37,9 +37,6 @@ function App() {
                 </Element>
                 <Element name="projects" className="element">
                     <Projects/>
-                </Element>
-                <Element name="education" className="element">
-                    <Education/>
                 </Element>
                 <Element name="resume" className="element">
                     <Resume/>

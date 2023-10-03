@@ -2,7 +2,7 @@ import './ScrollToTopButton.css';
 import {useEffect, useRef, useState} from 'react';
 import {animateScroll} from 'react-scroll';
 import {CSSTransition} from 'react-transition-group';
-import arrowUpIcon from '../../../assets/icons/icons8-arrow-up-200.svg';
+import arrowUpIcon from '../../../assets/icons/icons8-slide-up.svg';
 
 const ScrollToTopButton = ({top = 40}: { top?: number }) => {
     const [visible, setVisible] = useState(false);
@@ -24,7 +24,7 @@ const ScrollToTopButton = ({top = 40}: { top?: number }) => {
                 <button ref={nodeRef} className="scroll-up-btn" type="button" onClick={() => animateScroll.scrollToTop({
                     duration: 500,
                     smooth: true,
-                    offset: -60
+                    offset: -90
                 })}>
                     <img src={arrowUpIcon} alt="Scroll to Top"/>
                 </button>
