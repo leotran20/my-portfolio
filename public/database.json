@@ -1,6 +1,7 @@
 {
-  "heading": "Hi, I'm Leo",
-  "description": "Welcome to my portfolio website! Here, you will find a curated collection of my creative endeavors and professional achievements. Through a blend of captivating visuals, compelling storytelling, and innovative design, I aim to take you on a journey through my diverse range of skills and experiences. Whether it's my captivating graphic designs, thought-provoking illustrations, or engaging web development projects, each piece in my portfolio reflects my passion for creativity and dedication to excellence. Join me as we explore the intersection of art and technology, where imagination knows no bounds. Get ready to be inspired, delighted, and intrigued as you delve into my world of limitless possibilities.",
+  "heading": "Hi, I'm Leo Tran",
+  "greeting": "Welcome to my portfolio website!",
+  "description": "A Web Developer",
   "contact": [
     {
       "name": "Email",
@@ -40,7 +41,7 @@
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
     },
     {
-      "name": "AngularJS",
+      "name": "Angular",
       "type": "frontend",
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
     },
@@ -124,6 +125,95 @@
       "name": "Visual Studio Code",
       "type": "development",
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain-wordmark.svg"
+    }
+  ],
+  "projects": [
+    {
+      "id": "llab-ecosystem",
+      "name": "LLab Ecosystem",
+      "description": "This system includes a web application, a mobile application and a backend server. The web application is used by the admin and staff to manage the system. The mobile application is used by the customers to track, review, manage their orders, as well as receive notifications. The backend server is used to store data and handle requests from the web and mobile applications.",
+      "type": "freelance",
+      "imageName": "llab-order-page.png",
+      "skills": [
+        {
+          "name": "Angular",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+        },
+        {
+          "name": "Bootstrap",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+        },
+        {
+          "name": "Flutter",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+        },
+        {
+          "name": "NodeJs",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        },
+        {
+          "name": "Express",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+        },
+        {
+          "name": "MySQL",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+        },
+        {
+          "name": "Firebase",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+        },
+        {
+          "name": "Socket.io",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
+        },
+        {
+          "name": "Redis",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+        },
+        {
+          "name": "Javascript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        },
+        {
+          "name": "Typescript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        }
+      ],
+      "images": [
+        {
+          "title": "Web App - Order Page",
+          "imageName": "llab-order-page.png"
+        },
+        {
+          "title": "Web App - New Order",
+          "imageName": "llab-1.png"
+        },
+        {
+          "title": "Web App - Delivery Page",
+          "imageName": "llab-2.png"
+        },
+        {
+          "title": "Web App - Promotion Page",
+          "imageName": "llab-3.png"
+        },
+        {
+          "title": "Web App - Profile Page",
+          "imageName": "llab-4.png"
+        },
+        {
+          "title": "Mobile App - Home Screen",
+          "imageName": "llab-5.jpeg"
+        },
+        {
+          "title": "Mobile App - New Order Screen",
+          "imageName": "llab-6.png"
+        },
+        {
+          "title": "Mobile App - Order Detail Screen",
+          "imageName": "llab-7.png"
+        }
+      ]
     }
   ]
 }

@@ -1,29 +1,20 @@
-.hover-transition {
-    transition-duration: .3s;
+#about .name {
+    background-color: var(--cyan-200);
+    color: var(--text-color);
+    padding: 0 .6rem;
+    border-radius: 0.25rem;
+    box-shadow: 4px 5px 17px -4px var(--cyan-300);
 }
 
-.hover-transition:hover {
-    color: rgba(55, 65, 81) !important;
-}
-
-.hover-transition::before {
-    transform: scaleX(0);
-    transform-origin: bottom right;
-}
-
-.hover-transition:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.hover-transition::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    inset: 0 0 0 0;
-    background: var(--cyan-200);
-    transition: transform .3s ease;
-    z-index: -1;
+#about .name::after {
+    content: "";
+    width: 5px;
+    margin-left: 5px;
+    height: 47px;
+    margin-top: 5px;
+    background: #8338ec;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
 }
 
 .see-project-button {
@@ -66,7 +57,22 @@
     width: 250%;
 }
 
-.main-content {
-    flex: 2;
+#about .social:hover {
+    transform: scale(1.4);
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    #about .name::after {
+        height: 70%;
+        margin-bottom: -2px;
+    }
+}
+
 

@@ -1,4 +1,5 @@
 import {Link} from 'react-scroll';
+import {useNavigate} from 'react-router-dom';
 import './NavBar.css';
 import DarkModeToggleButton from '../DarkModeToggleButton/DarkModeToggleButton';
 import {useAppDispatch, useAppSelector} from '../../../app/hooks';
@@ -7,7 +8,7 @@ import {toggleNavigation} from '../../slices/globalSlice';
 const NavBar = ({menuItems}: { menuItems: { title: string, url: string }[] }) => {
     const isMenuOpen = useAppSelector(state => state.global.isNavigationOpen);
     const dispatch = useAppDispatch();
-
+    const navigate = useNavigate();
     return (
         <div
             className="navbar sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b border-slate-900/10 dark:border-slate-50/[0.06] supports-backdrop-blur:bg-white/60 bg-transparent">
@@ -15,9 +16,11 @@ const NavBar = ({menuItems}: { menuItems: { title: string, url: string }[] }) =>
                 <div
                     className="flex justify-center md:justify-between py-4 border-b border-slate-900/10 px-4 lg:border-0 dark:border-slate-300/10 mx-0 lg:mx-0">
                     <div className="logo flex animate-pulse">
-                        <Link className="cursor-pointer px-1.5 rounded-full self-center" to="about" offset={-90} smooth={true} duration={500}>
+                        <a className="cursor-pointer px-1.5 rounded-full self-center" onClick={() => {
+                            navigate('/');
+                        }}>
                             <p className="text-md">LT</p>
-                        </Link>
+                        </a>
 
                     </div>
                     <div className="flex flex-1 justify-end">
@@ -32,7 +35,7 @@ const NavBar = ({menuItems}: { menuItems: { title: string, url: string }[] }) =>
                                     className="md:!h-10 w-full md:w-max m-0 p-0 mt-2 md:mt-0 cursor-pointer opacity-0 md:opacity-100">
                                     <Link className="self-center"
                                           onClick={() => dispatch(toggleNavigation())}
-                                          onSetActive={() =>  window.history.pushState({ section: item.url }, '', `#${item.url}`)}
+                                          onSetActive={() => window.history.pushState({section: item.url}, '', `#${item.url}`)}
                                           activeClass="active"
                                           spy={true}
                                           smooth={true}

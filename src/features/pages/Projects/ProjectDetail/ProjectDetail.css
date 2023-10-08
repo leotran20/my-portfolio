@@ -1,0 +1,26 @@
+.description ul {
+    @apply list-disc pl-5 leading-loose;
+}
+
+.description a {
+    text-decoration: underline;
+    color: var(--cyan-200);
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+    border: 1px solid var(--cyan-200) !important;
+}
+
+.carousel .slide img {
+    max-height: 800px;
+    object-fit: contain;
+}
+
+.carousel .thumb {
+    border: 1px solid var(--text-color) !important;
+}
+
+.carousel .thumb img {
+    max-height: 45px;
+    object-fit: contain;
+}

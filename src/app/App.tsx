@@ -8,12 +8,14 @@ import Layout from '../features/pages/Layout/Layout';
 import {About, Contact, Projects, Resume, Skills} from '../features/pages';
 import useRequest from '../hooks/use-request';
 import {setData} from '../features/slices/infoSlice';
+import {Route, Routes} from 'react-router-dom';
+import ProjectDetail from '../features/pages/Projects/ProjectDetail/ProjectDetail';
 
 function App() {
     const isDark = useAppSelector(state => state.global.darkMode);
     const dispatch = useAppDispatch();
     const {doRequest} = useRequest({
-        url: 'database.json',
+        url: '/database.json',
         method: 'GET'
     });
     useEffect(() => {
@@ -26,27 +28,33 @@ function App() {
         fetchData()
             .catch(console.error);
     }, []);
-    return (
-        <div className={`App ${isDark ? 'dark' : ''}`}>
-            <Layout>
-                <Element name="about" className="element">
-                    <About/>
-                </Element>
-                <Element name="skills" className="element">
-                    <Skills/>
-                </Element>
-                <Element name="projects" className="element">
-                    <Projects/>
-                </Element>
-                <Element name="resume" className="element">
-                    <Resume/>
-                </Element>
-                <Element name="contact" className="element">
-                    <Contact/>
-                </Element>
-            </Layout>
 
-        </div>
+    const renderMainPage = () => (<>
+        <Element name="about" className="element">
+            <About/>
+        </Element>
+        <Element name="skills" className="element">
+            <Skills/>
+        </Element>
+        <Element name="projects" className="element">
+            <Projects/>
+        </Element>
+        <Element name="resume" className="element">
+            <Resume/>
+        </Element>
+        <Element name="contact" className="element">
+            <Contact/>
+        </Element>
+    </>);
+    return (
+        <main className={`App ${isDark ? 'dark' : ''}`}>
+            <Routes>
+                <Route path="/" element={<Layout/>}>
+                    <Route path="" element={renderMainPage()}/>
+                    <Route path="/projects/:id" element={<ProjectDetail/>}/>
+                </Route>
+            </Routes>
+        </main>
     );
 }
 

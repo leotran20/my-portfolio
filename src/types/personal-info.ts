@@ -1,5 +1,8 @@
+import {Project} from './project';
+
 export interface DataType {
     heading?: string,
+    greeting?: string,
     description?: string,
     contact?: {
         name: string,
@@ -13,5 +16,6 @@ export interface DataType {
         type: 'frontend' | 'backend' | 'database' | 'devops' | 'other'
         logo: string,
         storedLocallyLogo?: boolean,
-    }[]
+    }[],
+    projects?: Project[]
 }
