@@ -68,6 +68,8 @@ const ProjectDetail = () => {
 
                     <li><p>I have implemented a MySQL database, thoughtfully designed with appropriate indexes to
                         optimize query performance for faster data retrieval.</p></li>
+                    <li><p>I have collaborated effectively with a team of 3 members to achieve project goals and
+                        deliver exceptional results.</p></li>
                 </ul>
             </div>
             <h2 className="font-semibold text-xl py-2 mt-5">Tech Stack:</h2>
