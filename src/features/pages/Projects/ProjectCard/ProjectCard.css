@@ -3,7 +3,6 @@
     grid-template: repeat(6, min-content) / 1fr;
     grid-column-gap: 5rem;
     grid-row-gap: 2rem;
-    padding: 2rem 0;
     position: relative;
 }
 

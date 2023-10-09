@@ -12,7 +12,7 @@
 }
 
 .carousel .slide img {
-    max-height: 800px;
+    max-height: 500px;
     object-fit: contain;
 }
 
@@ -23,4 +23,11 @@
 .carousel .thumb img {
     max-height: 45px;
     object-fit: contain;
+}
+
+@media (min-width: 1024px) {
+    .carousel .slide img {
+        max-height: 800px;
+    }
+
 }

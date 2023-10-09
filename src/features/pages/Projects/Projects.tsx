@@ -8,7 +8,7 @@ const Projects = () => {
 
 
     return (
-        <div id="projects" className="w-full">
+        <div id="projects" className="w-full px-5 lg:px-0">
             <h2 className="title w-fit hover-transition text-slate-900 dark:text-white mt-5 mb-5 text-4xl font-semibold z-0">
                 Projects
             </h2>
