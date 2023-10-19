@@ -9,7 +9,7 @@
 #about .name::after {
     content: "";
     width: 5px;
-    margin-left: 5px;
+    margin-left: 3px;
     height: 47px;
     margin-top: 5px;
     background: #8338ec;
