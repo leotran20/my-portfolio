@@ -9,10 +9,6 @@
     transition: background-color .2s linear;
 }
 
-html {
-    scrollbar-width: none;
-}
-
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -21,10 +17,6 @@ body {
     box-sizing: border-box;
     background-color: var(--background-color-1);
     color: var(--text-color);
-}
-
-body::-webkit-scrollbar {
-    display: none;
 }
 
 .element {
