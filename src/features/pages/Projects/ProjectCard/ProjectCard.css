@@ -7,16 +7,6 @@
 }
 
 
-.card-wrapper::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40%;
-    height: 1px;
-    content: "";
-    background-color: var(--cyan-300);
-}
-
 @media (min-width: 1024px) {
     .card-wrapper {
         grid-template-columns: 3fr 2fr;

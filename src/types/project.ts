@@ -3,6 +3,10 @@ export interface Project {
     name: string,
     description: string,
     imageName: string,
+    type: 'freelance' | 'school' | 'personal',
+    projectLink?: string,
+    githubLink?: string,
+    role?: string,
     skills: {
         name: string,
         logo: string

@@ -51,6 +51,11 @@
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
     },
     {
+      "name": "jquery",
+      "type": "frontend",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg"
+    },
+    {
       "name": "JavaScript",
       "type": "frontend",
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -134,6 +139,7 @@
       "description": "This system includes a web application, a mobile application and a backend server. The web application is used by the admin and staff to manage the system. The mobile application is used by the customers to track, review, manage their orders, as well as receive notifications. The backend server is used to store data and handle requests from the web and mobile applications.",
       "type": "freelance",
       "imageName": "llab-order-page.png",
+      "role": "Full Stack Developer",
       "skills": [
         {
           "name": "HTML5",
@@ -220,6 +226,87 @@
         {
           "title": "Mobile App - Order Detail Screen",
           "imageName": "llab-7.png"
+        }
+      ]
+    },
+    {
+      "id": "optical-store",
+      "name": "Optical Store",
+      "description": "Developed a user-friendly optical store website with a special focus on children's eyecare.",
+      "type": "school",
+      "imageName": "optical-store.png",
+      "projectLink": "https://ict-50220-at-2.vercel.app/",
+      "githubLink": "https://github.com/leotran20/optical-AT2",
+      "skills": [
+        {
+          "name": "HTML5",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        },
+        {
+          "name": "CSS3",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        },
+        {
+          "name": "jquery",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+        },
+        {
+          "name": "Javascript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        }
+      ]
+    },
+    {
+      "id": "fitness-centre",
+      "name": "Fitness Centre",
+      "description": "The website is your go-to platform for fitness and health. It offers a variety of classes and training options to help you reach your fitness goals.",
+      "type": "school",
+      "imageName": "fitness-centre.png",
+      "projectLink": "https://ict-50220-at-3.vercel.app/",
+      "githubLink": "https://github.com/leotran20/fitness-AT3",
+      "skills": [
+        {
+          "name": "HTML5",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        },
+        {
+          "name": "CSS3",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        },
+        {
+          "name": "jquery",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+        },
+        {
+          "name": "Javascript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        }
+      ]
+    },
+    {
+      "id": "my-portfolio",
+      "name": "My Portfolio",
+      "description": "My portfolio showcases a curated collection of my most notable work and accomplishments, providing a comprehensive overview of my skills and expertise across various projects and domains.",
+      "type": "personal",
+      "imageName": "my-portfolio.png",
+      "projectLink": "https://leotran.live/",
+      "githubLink": "https://github.com/leotran20/my-portfolio",
+      "skills": [
+        {
+          "name": "HTML5",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        },
+        {
+          "name": "CSS3",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        },
+        {
+          "name": "Typescript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "ReactJS",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
         }
       ]
     }
