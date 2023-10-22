@@ -2,6 +2,7 @@ import './ProjectCard.css';
 import {useNavigate} from 'react-router-dom';
 import {Project} from '../../../../types/project';
 import {Tooltip} from 'react-tooltip';
+import React from 'react';
 
 type Props = {
     className?: string,
@@ -23,12 +24,12 @@ export default function ProjectCard({className, project}: Props) {
             <ul className="skill-list col-start-1 col-span-1 flex flex-row flex-wrap xl:w-1/2">
                 {
                     project.skills?.map((skill) => (
-                        <>
+                        <React.Fragment key={skill.name}>
                             <li key={skill.name}><img className="h-12 p-2" alt={skill.name} src={skill.logo}
                                                       data-tooltip-id={skill.name} data-tooltip-content={skill.name}/>
                             </li>
                             <Tooltip id={skill.name}/>
-                        </>
+                        </React.Fragment>
                     ))
                 }
 

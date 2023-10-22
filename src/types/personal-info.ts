@@ -1,4 +1,7 @@
 import {Project} from './project';
+import {Degree} from './degree';
+import {HistoryRecord} from './history-record';
+import {Training} from './training';
 
 export interface DataType {
     heading?: string,
@@ -17,5 +20,8 @@ export interface DataType {
         logo: string,
         storedLocallyLogo?: boolean,
     }[],
-    projects?: Project[]
+    projects?: Project[],
+    education?: Degree[],
+    experience?: HistoryRecord[],
+    training?: Training[]
 }

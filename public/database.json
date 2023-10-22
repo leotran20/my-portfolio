@@ -310,5 +310,167 @@
         }
       ]
     }
+  ],
+  "education": [
+    {
+      "id": "tafe-qld",
+      "name": "TAFE Queensland",
+      "logo": "tafe-logo.png",
+      "degree": "Diploma of Information Technology",
+      "startDate": "2023",
+      "endDate": "present"
+    },
+    {
+      "id": "hcmus",
+      "name": "University of Science, Ho Chi Minh city",
+      "logo": "hcmus-logo.png",
+      "degree": "Bachelor of Science in Software Engineering",
+      "startDate": "2013",
+      "endDate": "2017"
+    }
+  ],
+  "experience": [
+    {
+      "id": "zigvy",
+      "name": "Zigvy Corporation",
+      "logo": "zigvy-logo.png",
+      "location": "Ho Chi Minh city, Vietnam",
+      "position": "Front-End Web Developer",
+      "startDate": "April 2018",
+      "endDate": "January 2019",
+      "description": "- Created a payroll system using React.js, Redux and Meteor.js\n- Utilised Git version control to efficiently manage codebase, collaborate with team members\n- Participated in code reviews, providing constructive feedback and ensuring adherence to coding standards, best practices, and performance optimisations.",
+      "technologies": [
+        {
+          "name": "HTML5",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+        },
+        {
+          "name": "CSS3",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+        },
+        {
+          "name": "ReactJS",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        },
+        {
+          "name": "Redux",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+        },
+        {
+          "name": "Meteor",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/meteor/meteor-original.svg"
+        },
+        {
+          "name": "Javascript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        },
+        {
+          "name": "Trello",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+        },
+        {
+          "name": "Github",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+        }
+      ]
+    },
+    {
+      "id": "elcavn",
+      "name": "ELCA Vietnam",
+      "logo": "elca-logo.png",
+      "location": "Ho Chi Minh city, Vietnam",
+      "position": "Full-stack Developer",
+      "startDate": "April 2017",
+      "endDate": "April 2018",
+      "description": "- Developed a web application using frameworks such as Angular and .NET, ensuring responsive and user-friendly interfaces.\n- Composed integration testing, end-to-end testing, and user acceptance testing, ensuring a robust and error-free product, achieved more than 95% customer satisfaction rate.\n- Designed and optimised relational databases (SQL) for efficient data storage and retrieval.\n- Operated Agile methodology in software development, met deadlines while maintaining high-quality deliverables and customer expectations.\n- Participated in ongoing training to enhance own job skills and knowledge.\n- Worked with a team of 5 members and provided end-to-end solutions for clients.",
+      "technologies": [
+        {
+          "name": "HTML5",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+        },
+        {
+          "name": "less",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg"
+        },
+        {
+          "name": "Angular",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+        },
+        {
+          "name": ".NET Core",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+        },
+        {
+          "name": "Typescript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "C#",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+        },
+        {
+          "name": "Microsoft SQL Server",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+        },
+        {
+          "name": "Jira",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
+        },
+        {
+          "name": "Bitbucket",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"
+        }
+      ]
+    }
+  ],
+  "training": [
+    {
+      "id": "microservices",
+      "name": "Microservices with Node JS and React",
+      "provider": "Udemy Online School",
+      "issuedDate": "July 2023",
+      "description": "Learn to build, test, and deploy microservices powered by Node JS, React, Docker and Kubernetes.",
+      "certificate": "https://ude.my/UC-a6575346-3b82-41d9-bb76-60115c09b82d",
+      "technologies": [
+        {
+          "name": "HTML5",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+        },
+        {
+          "name": "CSS3",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+        },
+        {
+          "name": "ReactJS",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        },
+        {
+          "name": "NextJs",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+        },
+        {
+          "name": "Dcoker",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+        },
+        {
+          "name": "Kubernetes",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "name": "Version Control with Git by Atlassian University",
+      "provider": "Coursera",
+      "issuedDate": "July 2023",
+      "description": "This course will introduce the core concepts of version control that will allow you to better manage your coding projects.",
+      "certificate": "https://coursera.org/verify/G2V3AGED5V8D",
+      "technologies": [
+        {
+          "name": "Git",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+        }
+      ]
+    }
   ]
 }

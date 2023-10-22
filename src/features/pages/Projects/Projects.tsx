@@ -1,6 +1,7 @@
 import './Projects.css';
 import ProjectCard from './ProjectCard/ProjectCard';
 import {useAppSelector} from '../../../app/hooks';
+import React from 'react';
 
 const Projects = () => {
     const data = useAppSelector(state => state.info.data);
@@ -27,9 +28,9 @@ const Projects = () => {
                 Projects
             </h2>
             {
-                sections.map(section => {
+                sections.map((section, index) => {
                     return (
-                        <>
+                        <React.Fragment key={index}>
                             <p className="text-slate-500 dark:text-slate-400 mt-5 text-lg">{section.intro}</p>
                             <ul className="w-full mt-5 relative project-list">
                                 {
@@ -41,7 +42,7 @@ const Projects = () => {
                                     })
                                 }
                             </ul>
-                        </>
+                        </React.Fragment>
                     )
                 })
             }
