@@ -38,8 +38,8 @@ export default function ProjectCard({className, project}: Props) {
                 {project.description}
             </p>
 
-            <div className="flex flex-row justify-start items-center gap-7">
-                <button className="see-project-button col-start-1 col-span-1 h-fit w-fit" type="button"
+            <div className="flex flex-row justify-start items-stretch gap-7">
+                <button className="see-project-button col-start-1 col-span-1 w-fit" type="button"
                         onClick={() => {
                             if (project.projectLink) {
                                 window.open(project.projectLink);
@@ -51,7 +51,7 @@ export default function ProjectCard({className, project}: Props) {
                 </button>
                 {
                     project.githubLink &&
-                    <button className="see-project-button col-start-1 col-span-1 h-fit w-fit" type="button"
+                    <button className="see-project-button col-start-1 col-span-1 w-fit" type="button"
                             onClick={() => {
                                 window.open(project.githubLink);
                             }}>

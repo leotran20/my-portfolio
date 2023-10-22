@@ -9,7 +9,7 @@ const Resume = () => {
     const data = useAppSelector(state => state.info.data);
     const {education, experience, training} = data;
     const resume = require('./../../../assets/documents/LeoTranResume.pdf');
-    return (<section className="resume">
+    return (<section className="resume w-full px-5 lg:px-0">
         <h2 className="title w-fit hover-transition text-slate-900 dark:text-white mt-5 mb-5 text-4xl font-semibold z-0">
             Resume
         </h2>
@@ -31,7 +31,7 @@ const Resume = () => {
                     education?.map(item => {
                         const logo = require(`./../../../assets/images/${item.logo}`);
                         return (
-                            <li key={item.id} className="mt-5 flex flex-row justify-between">
+                            <li key={item.id} className="mt-5 flex flex-row justify-between items-center">
                                 <div>
                                     <h4 className="text-xl font-semibold">{item.degree}</h4>
                                     <p className="text-lg">{item.name}</p>
@@ -54,12 +54,12 @@ const Resume = () => {
                     experience?.map(item => {
                         const logo = require(`./../../../assets/images/${item.logo}`);
                         return (
-                            <li key={item.id} className="mt-10 flex flex-row justify-between">
+                            <li key={item.id} className="mt-10 flex flex-col-reverse lg:flex-row justify-between items-center">
                                 <div>
                                     <h4 className="text-xl font-semibold">{item.position}</h4>
                                     <p className="text-lg font-semibold">{item.name} | {item.location}</p>
                                     <p className="text-lg">{item.startDate} - {item.endDate}</p>
-                                    <ul className="flex flex-row gap-0.5 my-2">
+                                    <ul className="flex flex-row gap-0.5 my-2 flex-wrap">
                                         {
                                             item.technologies?.map(tech => (
                                                 <React.Fragment key={tech.name}>
@@ -90,7 +90,7 @@ const Resume = () => {
                 {
                     training?.map(item => {
                         return (
-                            <li key={item.id} className="mt-10 flex flex-row justify-between">
+                            <li key={item.id} className="mt-10 flex flex-row justify-between items-center">
                                 <div>
                                     <h4 className="text-xl font-semibold">{item.name} | {item.provider}</h4>
                                     <p className="text-lg">{item.issuedDate}</p>

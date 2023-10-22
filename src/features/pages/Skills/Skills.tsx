@@ -28,7 +28,7 @@ const Skills = () => {
     ];
     return (
         <div id="skills" className="mb-32">
-            <Portlet className="" title={'My Skills'} subtitle="The skills, tools and technologies I use to bring your products to life:">
+            <Portlet className="mx-4 my-8 lg:mx-0" title={'My Skills'} subtitle="The skills, tools and technologies I use to bring your products to life:">
                 {
                     skillConfig.map(section =>
                         (
