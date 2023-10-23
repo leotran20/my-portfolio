@@ -7,12 +7,18 @@ export interface DataType {
     heading?: string,
     greeting?: string,
     description?: string,
+    personalInfo?: {
+        phone: string,
+        address: string
+    },
     contact?: {
         name: string,
         icon: string,
         title: string,
         internalPage?: boolean,
-        link: string
+        link: string,
+        showInContact?: boolean,
+        alternativeIcon?: [string, string]
     }[],
     skills?: {
         name: string,
@@ -23,5 +29,6 @@ export interface DataType {
     projects?: Project[],
     education?: Degree[],
     experience?: HistoryRecord[],
-    training?: Training[]
+    training?: Training[],
+    contactIntro?: string
 }

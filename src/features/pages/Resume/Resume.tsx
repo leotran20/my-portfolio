@@ -9,10 +9,10 @@ const Resume = () => {
     const data = useAppSelector(state => state.info.data);
     const {education, experience, training} = data;
     const resume = require('./../../../assets/documents/LeoTranResume.pdf');
-    return (<section className="resume w-full px-5 lg:px-0">
-        <h2 className="title w-fit hover-transition text-slate-900 dark:text-white mt-5 mb-5 text-4xl font-semibold z-0">
+    return (<section className="resume w-full px-5 lg:px-0 mb-32">
+        <h1 className="title w-fit hover-transition text-slate-900 dark:text-white mt-5 mb-5 text-4xl font-semibold z-0">
             Resume
-        </h2>
+        </h1>
         <p className="mt-10">
             Here is a brief overview of my education and work experience.
             <br/>
@@ -25,19 +25,19 @@ const Resume = () => {
         </a>
 
         <Portlet className="mt-10">
-            <h3 className="text-2xl font-semibold mb-3">Education</h3>
+            <h2 className="text-2xl font-semibold mb-3">Education</h2>
             <ul>
                 {
                     education?.map(item => {
                         const logo = require(`./../../../assets/images/${item.logo}`);
                         return (
-                            <li key={item.id} className="mt-5 flex flex-row justify-between items-center">
+                            <li key={item.id} className="mt-5 flex flex-col-reverse lg:flex-row justify-between items-center">
                                 <div>
-                                    <h4 className="text-xl font-semibold">{item.degree}</h4>
+                                    <h3 className="text-xl font-semibold">{item.degree}</h3>
                                     <p className="text-lg">{item.name}</p>
                                     <p className="text-lg">{item.startDate} - {item.endDate}</p>
                                 </div>
-                                <picture className="w-36  flex items-center">
+                                <picture className="w-36  flex items-center mb-2 lg:mb-0">
                                     <img alt={item.name} src={logo} className="object-contain"/>
                                 </picture>
                             </li>
@@ -48,7 +48,7 @@ const Resume = () => {
         </Portlet>
 
         <Portlet className="mt-10">
-            <h3 className="text-2xl font-semibold mb-3">Work Experience</h3>
+            <h2 className="text-2xl font-semibold mb-3">Work Experience</h2>
             <ul>
                 {
                     experience?.map(item => {
@@ -56,7 +56,7 @@ const Resume = () => {
                         return (
                             <li key={item.id} className="mt-10 flex flex-col-reverse lg:flex-row justify-between items-center">
                                 <div>
-                                    <h4 className="text-xl font-semibold">{item.position}</h4>
+                                    <h3 className="text-xl font-semibold">{item.position}</h3>
                                     <p className="text-lg font-semibold">{item.name} | {item.location}</p>
                                     <p className="text-lg">{item.startDate} - {item.endDate}</p>
                                     <ul className="flex flex-row gap-0.5 my-2 flex-wrap">
@@ -85,14 +85,14 @@ const Resume = () => {
         </Portlet>
 
         <Portlet className="mt-10">
-            <h3 className="text-2xl font-semibold mb-3">Self-Training</h3>
+            <h2 className="text-2xl font-semibold mb-3">Self-Training</h2>
             <ul>
                 {
                     training?.map(item => {
                         return (
                             <li key={item.id} className="mt-10 flex flex-row justify-between items-center">
                                 <div>
-                                    <h4 className="text-xl font-semibold">{item.name} | {item.provider}</h4>
+                                    <h3 className="text-xl font-semibold">{item.name} | {item.provider}</h3>
                                     <p className="text-lg">{item.issuedDate}</p>
                                     <ul className="flex flex-row gap-0.5 my-2">
                                         {

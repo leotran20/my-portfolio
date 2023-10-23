@@ -20,7 +20,7 @@ export default function ProjectCard({className, project}: Props) {
                 {project.role}
             </article>
             }
-            <h1 className="text-4xl lg:text-5xl font-semibold col-start-1 col-span-1 text-slate-900 dark:text-white">{project.name}</h1>
+            <h1 className="text-3xl lg:text-4xl font-semibold col-start-1 col-span-1 text-slate-900 dark:text-white">{project.name}</h1>
             <ul className="skill-list col-start-1 col-span-1 flex flex-row flex-wrap xl:w-1/2">
                 {
                     project.skills?.map((skill) => (

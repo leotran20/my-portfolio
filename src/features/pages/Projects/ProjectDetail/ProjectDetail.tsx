@@ -26,7 +26,7 @@ const ProjectDetail = () => {
             duration: 500
         });
     }, []);
-    return !project ? null : (<section className="py-5">
+    return !project ? null : (<section className="py-5 mx-5 lg:mx-0">
         <header className="project-detail flex flex-row items-center mb-10">
             <button type="button"
                     className="w-10 h-10 mr-2 p-2 text-xl rounded-full flex items-center justify-center hover:bg-slate-300 dark:hover:bg-slate-700"

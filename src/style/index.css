@@ -19,6 +19,12 @@ body {
     color: var(--text-color);
 }
 
+mark {
+    background-color: transparent;
+    color: var(--cyan-200);
+    font-weight: bold;
+}
+
 .element {
     min-height: 100vh;
 }

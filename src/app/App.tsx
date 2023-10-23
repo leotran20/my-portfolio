@@ -10,6 +10,7 @@ import useRequest from '../hooks/use-request';
 import {setData} from '../features/slices/infoSlice';
 import {Route, Routes} from 'react-router-dom';
 import ProjectDetail from '../features/pages/Projects/ProjectDetail/ProjectDetail';
+import {Toaster} from 'react-hot-toast';
 
 function App() {
     const isDark = useAppSelector(state => state.global.darkMode);
@@ -48,6 +49,7 @@ function App() {
     </>);
     return (
         <main className={`App ${isDark ? 'dark' : ''}`}>
+            <Toaster/>
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route path="" element={renderMainPage()}/>

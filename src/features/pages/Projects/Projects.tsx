@@ -24,14 +24,14 @@ const Projects = () => {
 
     return (
         <section id="projects" className="w-full px-5 lg:px-0">
-            <h2 className="title w-fit hover-transition text-slate-900 dark:text-white mt-5 mb-5 text-4xl font-semibold z-0">
+            <h1 className="title w-fit hover-transition text-slate-900 dark:text-white mt-5 mb-5 text-4xl font-semibold z-0">
                 Projects
-            </h2>
+            </h1>
             {
                 sections.map((section, index) => {
                     return (
                         <React.Fragment key={index}>
-                            <p className="text-slate-500 dark:text-slate-400 mt-5 text-lg">{section.intro}</p>
+                            <p className="text-slate-500 dark:text-slate-400 mt-10 text-lg">{section.intro}</p>
                             <ul className="w-full mt-5 relative project-list">
                                 {
                                     projects?.filter(i => i.type === section.type).map((project, index: number) => {

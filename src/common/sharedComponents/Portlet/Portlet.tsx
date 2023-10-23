@@ -15,9 +15,9 @@ const Portlet = ({children, className, title, subtitle, sideComponent}: Props) =
             <div className="flex lg:flex-row space-y-8 lg:space-x-16 flex-col z-0">
                 <div className="flex w-full flex-col">
                     {title ?
-                        <h2 className="title w-fit hover-transition text-slate-900 dark:text-white mt-5 mb-5 text-4xl font-semibold">
+                        <h1 className="title w-fit hover-transition text-slate-900 dark:text-white mt-5 mb-5 text-4xl font-semibold">
                             {title}
-                        </h2>
+                        </h1>
                         :
                         null}
                     {subtitle ?

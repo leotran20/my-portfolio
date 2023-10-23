@@ -2,24 +2,43 @@
   "heading": "Hi, I'm Leo Tran",
   "greeting": "Welcome to my portfolio website!",
   "description": "A Web Developer",
+  "personalInfo": {
+    "phone": "0436 460 597",
+    "address": "Cairns, Queensland 4870"
+  },
   "contact": [
     {
       "name": "leotran2au@gmail.com",
       "icon": "https://img.icons8.com/emoji/96/e-mail.png",
       "title": "leotran2au@gmail.com",
-      "link": "mailto:leotran2au@gmail.com"
+      "link": "mailto:leotran2au@gmail.com",
+      "showInContact": true,
+      "alternativeIcon": [
+        "fas",
+        "at"
+      ]
     },
     {
       "name": "LinkedIn",
       "icon": "https://img.icons8.com/fluency/96/linkedin.png",
       "title": "Leo Tran",
-      "link": "https://www.linkedin.com/in/leotran20/"
+      "link": "https://www.linkedin.com/in/leotran20/",
+      "showInContact": true,
+      "alternativeIcon": [
+        "fab",
+        "linkedin"
+      ]
     },
     {
       "name": "GitHub",
       "icon": "https://img.icons8.com/fluency/96/github.png",
       "title": "Leo Tran",
-      "link": "https://github.com/leotran20"
+      "link": "https://github.com/leotran20",
+      "showInContact": true,
+      "alternativeIcon": [
+        "fab",
+        "github"
+      ]
     },
     {
       "name": "Contact Form",
@@ -192,6 +211,10 @@
         {
           "name": "Typescript",
           "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "Trello",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
         }
       ],
       "images": [
@@ -307,6 +330,10 @@
         {
           "name": "ReactJS",
           "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        },
+        {
+          "name": "Redux",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
         }
       ]
     }
@@ -472,5 +499,6 @@
         }
       ]
     }
-  ]
+  ],
+  "contactIntro": "If you're interested in exploring how my skills and experience align with your organisation's needs, I'm eager to hear from you. Please don't hesitate to reach out to discuss potential opportunities and how I can contribute to your team. I look forward to the possibility of joining your organisation and making a positive impact."
 }
