@@ -6,6 +6,7 @@ import React, {useRef, useState} from 'react';
 import toast from 'react-hot-toast';
 import useRequest from '../../../../hooks/use-request';
 import {z, ZodError} from 'zod';
+import {useAppSelector} from '../../../../app/hooks';
 
 type Props = {
     className?: string
@@ -35,6 +36,7 @@ const ContactForm = (props: Props) => {
             }
         });
 
+        const isDark = useAppSelector(state => state.global.darkMode);
         const [loading, setLoading] = useState(false);
         const [error, setError] = useState<ZodError<Object> | null>(null);
 
@@ -88,12 +90,13 @@ const ContactForm = (props: Props) => {
                     </div>
 
                     <button
-                        className={`primary-button ml-3 mt-5 pageclip-form__submit ${loading ? 'pageclip-form__submit--loading' : ''}`}
+                        className={`primary-button ml-3 mt-5 pageclip-form__submit ${!isDark ? 'pageclip-form__submit--dark-loader' : ''} ${loading ? 'pageclip-form__submit--loading' : ''}`}
                         type="submit"
                         disabled={loading}>
                         <span><FontAwesomeIcon icon={faPaperPlane} className="mr-2"/>Send Message</span>
                     </button>
-                    <span className="text-red-500 text-sm mt-3 whitespace-pre-wrap">{error?.errors?.map(i => i.message).join('\n')}</span>
+                    <span
+                        className="text-red-500 text-sm mt-3 whitespace-pre-wrap">{error?.errors?.map(i => i.message).join('\n')}</span>
                 </Portlet>
             </form>
         );
