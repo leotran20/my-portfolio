@@ -1,16 +1,13 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {CustomError} from '../../types/custom-error';
 
 interface GlobalState {
     darkMode: boolean,
     isNavigationOpen: boolean,
-    middlewareError: CustomError | null
 }
 
 const initialState: GlobalState = {
     darkMode: true,
     isNavigationOpen: false,
-    middlewareError: null
 };
 
 const globalSlice = createSlice({
@@ -23,9 +20,6 @@ const globalSlice = createSlice({
         toggleNavigation: (state: GlobalState) => {
             state.isNavigationOpen = !state.isNavigationOpen;
         },
-        setMiddlewareError: (state: GlobalState, action: PayloadAction<CustomError>) => {
-            state.middlewareError = action.payload;
-        }
     }
 });
 
@@ -33,7 +27,6 @@ const {actions, reducer} = globalSlice;
 
 export const {
     changeTheme,
-    toggleNavigation,
-    setMiddlewareError
+    toggleNavigation
 } = actions;
 export default reducer;

@@ -43,7 +43,7 @@ const About = () => {
                             );
                         })}
                     </ul>
-                    <button className="see-project-button mt-6" type="button"
+                    <button className="primary-button mt-6" type="button"
                             onClick={() => scroller.scrollTo('projects', {
                                 duration: 500,
                                 spy: true,

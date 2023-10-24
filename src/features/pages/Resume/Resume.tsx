@@ -19,7 +19,7 @@ const Resume = () => {
             You can download my detailed resume to explore more about me &#128540;.
         </p>
 
-        <a className="flex see-project-button h-fit w-fit mt-5" href={resume} download="LeoTranResume.pdf">
+        <a className="flex primary-button h-fit w-fit mt-5" href={resume} download="LeoTranResume.pdf">
             <FontAwesomeIcon className="mr-2" icon={faDownload}/>
             Download my CV
         </a>
@@ -108,7 +108,7 @@ const Resume = () => {
                                         }
                                     </ul>
                                     <p className="text-lg whitespace-pre-line mt-2">{item.description}</p>
-                                    <button className="see-project-button mt-4 h-fit w-fit" type="button"
+                                    <button className="primary-button mt-4 h-fit w-fit" type="button"
                                             onClick={() => {
                                                 window.open(item.certificate);
                                             }}>

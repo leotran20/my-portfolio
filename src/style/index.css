@@ -56,3 +56,49 @@ mark {
     transition: transform .3s ease;
     z-index: -1;
 }
+
+.primary-button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--cyan-200);
+    transition: all 300ms;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid var(--cyan-200);
+    max-width: 15rem;
+}
+
+.primary-button:disabled {
+    outline-color: #9ca3af;
+    opacity: .7;
+}
+
+.primary-button:hover:enabled {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid var(--cyan-100);
+    box-shadow: 4px 5px 17px -4px var(--cyan-300);
+}
+
+.primary-button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--cyan-200);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 300ms;
+}
+
+.primary-button:hover:enabled::before {
+    width: 250%;
+}
+

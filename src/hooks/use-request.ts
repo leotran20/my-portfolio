@@ -1,25 +1,30 @@
 import axios from 'axios';
-import {useAppDispatch, useAppSelector} from '../app/hooks';
-import {setMiddlewareError} from '../features/slices/globalSlice';
-import {CustomError} from '../types/custom-error';
+import React, {useState} from 'react';
 
 type UseRequestProps = {
     url: string,
     method: 'GET' | 'POST' | 'PUT' | 'DELETE',
     body?: any,
     // eslint-disable-next-line no-unused-vars
-    onSuccess?: (response: any) => void
+    onSuccess?: (response: any) => void,
+    // eslint-disable-next-line no-unused-vars
+    onError?: (error: any, event?: any) => void
 }
 
-const useRequest = ({url, method, body, onSuccess}: UseRequestProps) => {
-    const dispatch = useAppDispatch();
-    const errors = useAppSelector(state => state.global.middlewareError);
-    const doRequest = async (props = {}) => {
+type Props = {
+    data: any,
+    event?: React.FormEvent<HTMLFormElement>
+}
+
+const useRequest = ({url, method, body, onSuccess, onError}: UseRequestProps) => {
+    const [errors, setErrors] = useState(null);
+    const doRequest = async (props?: Props) => {
 
         try {
+            setErrors(null);
             // @ts-ignore
             const response = await axios[method.toLowerCase()](url, {
-                ...body, ...props
+                ...body, ...(props?.data || {})
             });
 
             if (onSuccess) {
@@ -29,7 +34,10 @@ const useRequest = ({url, method, body, onSuccess}: UseRequestProps) => {
             return response.data;
         } catch (err: any) {
             console.log(err);
-            dispatch(setMiddlewareError(new CustomError(err.message)));
+            setErrors(err);
+            if (onError) {
+                onError(err);
+            }
         }
     };
 

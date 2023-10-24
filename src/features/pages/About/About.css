@@ -17,46 +17,6 @@
     animation: cursor-blink 1.5s steps(2) infinite;
 }
 
-.see-project-button {
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--cyan-200);
-    transition: all 300ms;
-    font-size: 1rem;
-    position: relative;
-    overflow: hidden;
-    outline: 2px solid var(--cyan-200);
-    max-width: 15rem;
-}
-
-.see-project-button:hover {
-    color: #ffffff;
-    transform: scale(1.1);
-    outline: 2px solid var(--cyan-100);
-    box-shadow: 4px 5px 17px -4px var(--cyan-300);
-}
-
-.see-project-button::before {
-    content: "";
-    position: absolute;
-    left: -50px;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--cyan-200);
-    transform: skewX(45deg);
-    z-index: -1;
-    transition: width 300ms;
-}
-
-.see-project-button:hover::before {
-    width: 250%;
-}
-
 #about .social:hover {
     transform: scale(1.4);
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
