@@ -1,6 +1,7 @@
 
 .navbar {
-    height: var(--header-height);
+    height: fit-content;
+    max-height: var(--header-height);
 }
 
 .dark .navbar .active, .dark .menu > li:hover {
@@ -30,7 +31,7 @@
 }
 
 .logo a {
-    color: var(--cyan-50) !important;;
+    color: var(--cyan-200) !important;;
 }
 
 .menu {

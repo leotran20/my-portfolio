@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useMemo} from 'react';
 import {Element} from 'react-scroll';
 
 import './App.css';
@@ -11,6 +11,7 @@ import {setData} from '../features/slices/infoSlice';
 import {Route, Routes} from 'react-router-dom';
 import ProjectDetail from '../features/pages/Projects/ProjectDetail/ProjectDetail';
 import {Toaster} from 'react-hot-toast';
+import {changeTheme} from '../features/slices/globalSlice';
 
 function App() {
     const isDark = useAppSelector(state => state.global.darkMode);
@@ -29,6 +30,16 @@ function App() {
         fetchData()
             .catch(console.error);
     }, []);
+
+    useMemo(() => {
+        const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+        if (darkThemeMq.matches) {
+          dispatch(changeTheme({dark: true}));
+        } else {
+            dispatch(changeTheme({dark: false}));
+        }
+    }, []);
+
 
     const renderMainPage = () => (<>
         <Element name="about" className="element">
