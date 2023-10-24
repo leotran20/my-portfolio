@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, {useState} from 'react';
+import {useState} from 'react';
 
 type UseRequestProps = {
     url: string,
@@ -11,20 +11,15 @@ type UseRequestProps = {
     onError?: (error: any, event?: any) => void
 }
 
-type Props = {
-    data: any,
-    event?: React.FormEvent<HTMLFormElement>
-}
-
 const useRequest = ({url, method, body, onSuccess, onError}: UseRequestProps) => {
     const [errors, setErrors] = useState(null);
-    const doRequest = async (props?: Props) => {
+    const doRequest = async (props = {}) => {
 
         try {
             setErrors(null);
             // @ts-ignore
             const response = await axios[method.toLowerCase()](url, {
-                ...body, ...(props?.data || {})
+                ...body, ...props
             });
 
             if (onSuccess) {
