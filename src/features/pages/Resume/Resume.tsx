@@ -25,29 +25,6 @@ const Resume = () => {
         </a>
 
         <Portlet className="mt-10">
-            <h2 className="text-2xl font-semibold mb-3">Education</h2>
-            <ul>
-                {
-                    education?.map(item => {
-                        const logo = require(`./../../../assets/images/${item.logo}`);
-                        return (
-                            <li key={item.id} className="mt-5 flex flex-col-reverse lg:flex-row justify-between items-center">
-                                <div>
-                                    <h3 className="text-xl font-semibold">{item.degree}</h3>
-                                    <p className="text-lg">{item.name}</p>
-                                    <p className="text-lg">{item.startDate} - {item.endDate}</p>
-                                </div>
-                                <picture className="w-36  flex items-center mb-2 lg:mb-0">
-                                    <img alt={item.name} src={logo} className="object-contain"/>
-                                </picture>
-                            </li>
-                        );
-                    })
-                }
-            </ul>
-        </Portlet>
-
-        <Portlet className="mt-10">
             <h2 className="text-2xl font-semibold mb-3">Work Experience</h2>
             <ul>
                 {
@@ -75,6 +52,29 @@ const Resume = () => {
                                     <p className="text-lg whitespace-pre-line mt-2">{item.description}</p>
                                 </div>
                                 <picture className="w-36 flex items-center">
+                                    <img alt={item.name} src={logo} className="object-contain"/>
+                                </picture>
+                            </li>
+                        );
+                    })
+                }
+            </ul>
+        </Portlet>
+
+        <Portlet className="mt-10">
+            <h2 className="text-2xl font-semibold mb-3">Education</h2>
+            <ul>
+                {
+                    education?.map(item => {
+                        const logo = require(`./../../../assets/images/${item.logo}`);
+                        return (
+                            <li key={item.id} className="mt-5 flex flex-col-reverse lg:flex-row justify-between items-center">
+                                <div>
+                                    <h3 className="text-xl font-semibold">{item.degree}</h3>
+                                    <p className="text-lg">{item.name}</p>
+                                    <p className="text-lg">{item.startDate} - {item.endDate}</p>
+                                </div>
+                                <picture className="w-36  flex items-center mb-2 lg:mb-0">
                                     <img alt={item.name} src={logo} className="object-contain"/>
                                 </picture>
                             </li>

@@ -10,12 +10,12 @@ const CONSTANTS = {
             url: 'skills'
         },
         {
-            title: 'Projects',
-            url: 'projects'
-        },
-        {
             title: 'Resume',
             url: 'resume'
+        },
+        {
+            title: 'Projects',
+            url: 'projects'
         },
         {
             title: 'Contact',

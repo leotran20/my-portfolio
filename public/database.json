@@ -155,6 +155,7 @@
     {
       "id": "llab-ecosystem",
       "name": "LLab Ecosystem",
+      "hide": true,
       "description": "This system includes a web application, a mobile application and a backend server. The web application is used by the admin and staff to manage the system. The mobile application is used by the customers to track, review, manage their orders, as well as receive notifications. The backend server is used to store data and handle requests from the web and mobile applications.",
       "type": "freelance",
       "imageName": "llab-order-page.png",
@@ -341,31 +342,99 @@
   "education": [
     {
       "id": "tafe-qld",
-      "name": "TAFE Queensland",
+      "name": "TAFE Queensland (Online)",
       "logo": "tafe-logo.png",
-      "degree": "Diploma of Information Technology",
+      "degree": "Diploma in Information Technology",
       "startDate": "2023",
-      "endDate": "present"
+      "endDate": "2024"
     },
     {
       "id": "hcmus",
       "name": "University of Science, Ho Chi Minh city",
       "logo": "hcmus-logo.png",
-      "degree": "Bachelor of Science in Software Engineering",
+      "degree": "Bachelor's Degree in Software Engineering",
       "startDate": "2013",
       "endDate": "2017"
     }
   ],
   "experience": [
     {
+      "id": "llab",
+      "name": "LLab",
+      "description": "• Enhanced order and customer management efficiency by 25% through the development of a dynamic web application.Leveraged HTML, CSS, and TypeScript (Angular framework) to seamlessly interact with REST APIs, ensuring real-time data synchronisation. Translated into a streamlined process, boosting overall productivity and user satisfaction.\n• Elevated user experiences by 30% through innovative development, harmonising coding proficiency with Figma for UI/UX design. Introduced creative solutions, measured through increased user engagement and satisfaction. Achieved a visually stunning user interface, resulting in heightened product appeal and a positive impact on user interactions.\n• Mastered frontend issue resolution, showcasing adept problem-solving skills. Methodically documented the development process, emphasising and implementing best practices in frontend technology. This meticulous documentation not only resolved challenges promptly but also contributed to an increase in overall system stability and efficiency.\n• Collaborated with a team of 3 members to effectively overcome project challenges, leading to streamlined processes and accelerated timelines.",
+      "location": "Ho Chi Minh city, Vietnam",
+      "logo": "llab-logo.png",
+      "position": "Frontend Developer",
+      "startDate": "July 2020",
+      "endDate": "present",
+      "technologies": [
+        {
+          "name": "HTML5",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        },
+        {
+          "name": "CSS3",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        },
+        {
+          "name": "Angular",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+        },
+        {
+          "name": "Bootstrap",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+        },
+        {
+          "name": "Flutter",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+        },
+        {
+          "name": "NodeJs",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        },
+        {
+          "name": "Express",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+        },
+        {
+          "name": "MySQL",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+        },
+        {
+          "name": "Firebase",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+        },
+        {
+          "name": "Socket.io",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
+        },
+        {
+          "name": "Redis",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+        },
+        {
+          "name": "Javascript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        },
+        {
+          "name": "Typescript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "Trello",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+        }
+      ]
+    },
+    {
       "id": "zigvy",
       "name": "Zigvy Corporation",
       "logo": "zigvy-logo.png",
       "location": "Ho Chi Minh city, Vietnam",
-      "position": "Front-End Web Developer",
+      "position": "Frontend Web Developer",
       "startDate": "April 2018",
       "endDate": "January 2019",
-      "description": "- Created a payroll system using React.js, Redux and Meteor.js\n- Utilised Git version control to efficiently manage codebase, collaborate with team members\n- Participated in code reviews, providing constructive feedback and ensuring adherence to coding standards, best practices, and performance optimisations.",
+      "description": "• Engineered a robust payroll system using React.js, Redux, and Meteor.js, achieving a 30% increase in processing efficiency and accuracy, measured by the reduction in payroll errors. This advancement translated to significant time-saving for the team, fostering seamless payroll operations.\n• Enhanced overall development productivity by 20% through implementation of Git version control and adherence to version control best practices.\n• Drove code excellence through active participation in code reviews, delivering constructive feedback and enforcing coding standards. This meticulous approach resulted in a 15% reduction in post- deployment issues, contributing to the overall enhancement of system performance and adherence to best practices.",
       "technologies": [
         {
           "name": "HTML5",
@@ -403,13 +472,13 @@
     },
     {
       "id": "elcavn",
-      "name": "ELCA Vietnam",
+      "name": "ELCA",
       "logo": "elca-logo.png",
       "location": "Ho Chi Minh city, Vietnam",
-      "position": "Full-stack Developer",
+      "position": "Frontend Developer",
       "startDate": "April 2017",
       "endDate": "April 2018",
-      "description": "- Developed a web application using frameworks such as Angular and .NET, ensuring responsive and user-friendly interfaces.\n- Composed integration testing, end-to-end testing, and user acceptance testing, ensuring a robust and error-free product, achieved more than 95% customer satisfaction rate.\n- Designed and optimised relational databases (SQL) for efficient data storage and retrieval.\n- Operated Agile methodology in software development, met deadlines while maintaining high-quality deliverables and customer expectations.\n- Participated in ongoing training to enhance own job skills and knowledge.\n- Worked with a team of 5 members and provided end-to-end solutions for clients.",
+      "description": "• Implemented a user-friendly, responsive web application using Angular, resulting in a 40% increase in user engagement and improved application efficiency.\n• Ensured a flawless product by meticulously conducting integration, end-to-end, and user acceptance testing. Achieved a remarkable customer satisfaction rate exceeding 95%.\n• Worked with a team of 5 members and provided end to end solutions for clients.",
       "technologies": [
         {
           "name": "HTML5",

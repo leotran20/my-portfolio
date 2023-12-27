@@ -9,7 +9,7 @@ const Projects = () => {
     const sections = [
         {
             intro: 'Here are some of the freelance projects I\'ve been actively involved in:',
-           type: 'freelance'
+            type: 'freelance'
         },
         {
             intro: 'Here are my school projects',
@@ -19,7 +19,7 @@ const Projects = () => {
             intro: 'Here are my personal projects',
             type: 'personal'
         }
-    ]
+    ];
 
 
     return (
@@ -29,12 +29,14 @@ const Projects = () => {
             </h1>
             {
                 sections.map((section, index) => {
+                    const appropriateProjects = projects?.filter(i => !i.hide && i.type === section.type);
                     return (
+                        appropriateProjects?.length ?
                         <React.Fragment key={index}>
                             <p className="text-slate-500 dark:text-slate-400 mt-10 text-lg">{section.intro}</p>
                             <ul className="w-full mt-5 relative project-list">
                                 {
-                                    projects?.filter(i => i.type === section.type).map((project, index: number) => {
+                                    appropriateProjects.map((project, index: number) => {
                                         return (<li key={index} className="w-full">
                                                 <ProjectCard className="m-auto"
                                                              project={project}/></li>
@@ -42,8 +44,8 @@ const Projects = () => {
                                     })
                                 }
                             </ul>
-                        </React.Fragment>
-                    )
+                        </React.Fragment> : null
+                    );
                 })
             }
         </section>

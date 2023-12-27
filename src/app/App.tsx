@@ -48,11 +48,11 @@ function App() {
         <Element name="skills" className="element">
             <Skills/>
         </Element>
-        <Element name="projects" className="element">
-            <Projects/>
-        </Element>
         <Element name="resume" className="element">
             <Resume/>
+        </Element>
+        <Element name="projects" className="element">
+            <Projects/>
         </Element>
         <Element name="contact" className="element">
             <Contact/>

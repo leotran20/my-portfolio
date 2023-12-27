@@ -1,6 +1,7 @@
 export interface Project {
     id: string,
     name: string,
+    hide: boolean,
     description: string,
     imageName: string,
     type: 'freelance' | 'school' | 'personal',
