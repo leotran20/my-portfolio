@@ -153,13 +153,13 @@
   ],
   "projects": [
     {
-      "id": "llab-ecosystem",
-      "name": "LLab Ecosystem",
-      "hide": true,
-      "description": "This system includes a web application, a mobile application and a backend server. The web application is used by the admin and staff to manage the system. The mobile application is used by the customers to track, review, manage their orders, as well as receive notifications. The backend server is used to store data and handle requests from the web and mobile applications.",
+      "id": "designhood",
+      "name": "Designhood",
+      "description": "The Designhood platform is a freelance platform connecting Clients with curated creative talents. The platform is the middleman, both the connector but also the project manager (PM) that follows the project from A-Z and assigns the Freelancer to do the job.",
       "type": "freelance",
-      "imageName": "llab-order-page.png",
+      "imageName": "designhood-logo.png",
       "role": "Full Stack Developer",
+      "videoPath": "designhood-intro.mp4",
       "skills": [
         {
           "name": "HTML5",
@@ -178,10 +178,6 @@
           "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
         },
         {
-          "name": "Flutter",
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
-        },
-        {
           "name": "NodeJs",
           "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
         },
@@ -192,14 +188,6 @@
         {
           "name": "MySQL",
           "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-        },
-        {
-          "name": "Firebase",
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-        },
-        {
-          "name": "Socket.io",
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
         },
         {
           "name": "Redis",
@@ -214,44 +202,58 @@
           "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
         },
         {
-          "name": "Trello",
-          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+          "name": "Jira",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
         }
       ],
       "images": [
         {
-          "title": "Web App - Order Page",
-          "imageName": "llab-order-page.png"
+          "title": "Client: Create Order",
+          "imageName": "designhood-client-create-order.png"
         },
         {
-          "title": "Web App - New Order",
-          "imageName": "llab-1.png"
+          "title": "Client: Payment Information",
+          "imageName": "designhood-client-payment-information.png"
         },
         {
-          "title": "Web App - Delivery Page",
-          "imageName": "llab-2.png"
+          "title": "Client: Messaging",
+          "imageName": "designhood-client-messaging.png"
         },
         {
-          "title": "Web App - Promotion Page",
-          "imageName": "llab-3.png"
+          "title": "Freelancer: Workplace",
+          "imageName": "designhood-freelancer-workplace1.png"
         },
         {
-          "title": "Web App - Profile Page",
-          "imageName": "llab-4.png"
+          "title": "Freelancer: Workplace",
+          "imageName": "designhood-freelancer-workplace2.png"
         },
         {
-          "title": "Mobile App - Home Screen",
-          "imageName": "llab-5.png"
+          "title": "Freelancer: Project Card",
+          "imageName": "designhood-freelancer-project-card.png"
         },
         {
-          "title": "Mobile App - New Order Screen",
-          "imageName": "llab-6.png"
+          "title": "Freelancer: Revision",
+          "imageName": "designhood-freelancer-revision.png"
         },
         {
-          "title": "Mobile App - Order Detail Screen",
-          "imageName": "llab-7.png"
+          "title": "Admin: New Projects",
+          "imageName": "designhood-admin-new-projects.png"
         }
-      ]
+      ],
+      "details": {
+        "description": [
+          "Spearheaded the development of Designhood, a global online platform connecting employers with freelancers from various industries.",
+          "Utilised Angular to architect and develop a cutting-edge web application, implementing responsive design principles and ensuring a user-friendly experience across various devices and screen sizes.",
+          "Collaborated with a 4-member team, employing Github, Jira, and Slack for seamless communication and efficient project management.",
+          "Integrated PayPal payment gateway seamlessly into the platform, enhancing user experience and facilitating secure transactions for services offered.",
+          "Integrated MySQL for efficient database management, optimizing data retrieval and storage processes.",
+          "Implemented RESTful APIs to enable seamless communication between the frontend and backend components.",
+          "Employed Redis to enhance the performance of the application, ensuring a seamless user experience.",
+          "Implemented a robust authentication system, ensuring secure access to the platform and its features.",
+          "Developed a robust search system, enabling users to search for projects and freelancers based on various criteria.",
+          "Operated a robust messaging system, enabling freelancers and clients to communicate seamlessly and efficiently."
+        ]
+      }
     },
     {
       "id": "optical-store",

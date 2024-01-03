@@ -8,6 +8,7 @@ export interface Project {
     projectLink?: string,
     githubLink?: string,
     role?: string,
+    videoPath?: string,
     skills: {
         name: string,
         logo: string
@@ -15,5 +16,8 @@ export interface Project {
     images: {
         title: string,
         imageName: string
-    }[]
+    }[],
+    details?: {
+        description: string[],
+    }
 }

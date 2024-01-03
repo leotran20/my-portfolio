@@ -8,7 +8,7 @@ import {Tooltip} from 'react-tooltip';
 const Resume = () => {
     const data = useAppSelector(state => state.info.data);
     const {education, experience, training} = data;
-    const resume = require('./../../../assets/documents/LeoTranResume.pdf');
+    const resume = require('./../../../assets/documents/Leo_Tran_Resume.pdf');
     return (<section className="resume w-full px-5 lg:px-0 mb-32">
         <h1 className="title w-fit hover-transition text-slate-900 dark:text-white mt-5 mb-5 text-4xl font-semibold z-0">
             Resume
@@ -19,7 +19,7 @@ const Resume = () => {
             You can download my detailed resume to explore more about me &#128540;.
         </p>
 
-        <a className="flex primary-button h-fit w-fit mt-5" href={resume} download="LeoTranResume.pdf">
+        <a className="flex primary-button h-fit w-fit mt-5" href={resume} download="Leo_Tran_Resume.pdf">
             <FontAwesomeIcon className="mr-2" icon={faDownload}/>
             Download my CV
         </a>
