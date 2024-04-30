@@ -92,7 +92,7 @@
     {
       "name": "TailwindCSS",
       "type": "frontend",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
     },
     {
       "name": "NodeJs",
@@ -143,7 +143,7 @@
     {
       "name": "IntelliJ IDEA",
       "type": "development",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original-wordmark.svg"
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"
     },
     {
       "name": "Visual Studio Code",
@@ -359,7 +359,7 @@
       "endDate": "2017"
     }
   ],
-  "experience": [
+  "workExperience": [
     {
       "id": "llab",
       "name": "LLab",
@@ -517,6 +517,64 @@
         {
           "name": "Bitbucket",
           "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"
+        }
+      ]
+    }
+  ],
+  "volunteering": [
+    {
+      "id": "thriveproject",
+      "name": "The THRIVE Project",
+      "logo": "thrive-logo.png",
+      "location": "Brisbane, Australia",
+      "position": "Volunteer Software Engineer",
+      "startDate": "January 2024",
+      "endDate": "present",
+      "description": "• Developing code for applications encompassing both frontend (React.js) and backend (Django) components.\n• Overseeing MongoDB Atlas management, encompassing database setup, data creation, and ensuring optimal data handling.\n• Implementing deployment processes for frontend and backend applications on Azure, prioritising reliability and scalability.\n• Coordinating project management tasks, including hosting meetings and fostering productive team collaboration.",
+      "technologies": [
+        {
+          "name": "HTML5",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+        },
+        {
+          "name": "CSS3",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        },
+        {
+          "name": "Javascript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        },
+        {
+          "name": "React",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        },
+        {
+          "name": "Material UI",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
+        },
+        {
+          "name": "Python",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        },
+        {
+          "name": "Django",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+        },
+        {
+          "name": "MongoDB",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+        },
+        {
+          "name": "Azure",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+        },
+        {
+          "name": "Trello",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-original.svg"
+        },
+        {
+          "name": "Github",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
         }
       ]
     }

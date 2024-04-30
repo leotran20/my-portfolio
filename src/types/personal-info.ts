@@ -28,7 +28,8 @@ export interface DataType {
     }[],
     projects?: Project[],
     education?: Degree[],
-    experience?: HistoryRecord[],
+    workExperience?: HistoryRecord[],
+    volunteering?: HistoryRecord[],
     training?: Training[],
     contactIntro?: string
 }
