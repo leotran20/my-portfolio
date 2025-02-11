@@ -50,6 +50,21 @@
   ],
   "skills": [
     {
+      "name": "JavaScript",
+      "type": "programming_language",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "TypeScript",
+      "type": "programming_language",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+    },
+    {
+      "name": "Python",
+      "type": "programming_language",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+    },
+    {
       "name": "HTML5",
       "type": "frontend",
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
@@ -70,21 +85,6 @@
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
     },
     {
-      "name": "jquery",
-      "type": "frontend",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg"
-    },
-    {
-      "name": "JavaScript",
-      "type": "frontend",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-    },
-    {
-      "name": "TypeScript",
-      "type": "frontend",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-    },
-    {
       "name": "Flutter",
       "type": "frontend",
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
@@ -93,6 +93,11 @@
       "name": "TailwindCSS",
       "type": "frontend",
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+    },
+    {
+      "name": "Vue.js",
+      "type": "frontend",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
     },
     {
       "name": "NodeJs",
@@ -105,6 +110,11 @@
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
     },
     {
+      "name": "Nestjs",
+      "type": "backend",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
+    },
+    {
       "name": "MySQL",
       "type": "database",
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
@@ -115,9 +125,9 @@
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
     },
     {
-      "name": "Git",
-      "type": "development",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+      "name": "PostgreSQL",
+      "type": "database",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
     },
     {
       "name": "Github",
@@ -125,30 +135,44 @@
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
     },
     {
-      "name": "ESLint",
+      "name": "Bun",
       "type": "development",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original-wordmark.svg"
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bun/bun-original.svg"
     },
     {
-      "name": "npm",
+      "name": "Vite",
       "type": "development",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
     },
     {
-      "name": "pnpm",
+      "name": "Webstorm",
       "type": "development",
-      "storedLocallyLogo": true,
-      "logo": "icons/pnpm-standard.svg"
-    },
-    {
-      "name": "IntelliJ IDEA",
-      "type": "development",
-      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webstorm/webstorm-original.svg"
     },
     {
       "name": "Visual Studio Code",
       "type": "development",
       "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain-wordmark.svg"
+    },
+    {
+      "name": "Azure",
+      "type": "cloud_platform",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+    },
+    {
+      "name": "Docker",
+      "type": "cloud_platform",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+    },
+    {
+      "name": "Kubernetes",
+      "type": "cloud_platform",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"
+    },
+    {
+      "name": "Github Actions",
+      "type": "ci_cd",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
     }
   ],
   "projects": [
@@ -361,14 +385,82 @@
   ],
   "workExperience": [
     {
+      "id": "allaro_homes",
+      "name": "Allaro Homes",
+      "description": "• Developed key features for AIMS, an end-to-end cloud-based platform that streamlines builder operations, project stages, claims, and cost calculations.\n• Built responsive and accessible UI components using React, Tailwind CSS, and Material UI, optimizing rendering performance with efficient state management and code splitting.\n• Designed and implemented scalable database and system architectures using NestJS, PostgreSQL, and Azure to support real-time data synchronization across multiple systems.\n• Collaborated closely with end-users to gather requirements, independently plan development tasks, and deliver high-impact features\n• Optimized workflows, significantly reducing processing time compared to legacy applications, leading to improved company efficiency and user satisfaction.",
+      "location": "Cairns, Queensland, Australia",
+      "logo": "allaro-logo.png",
+      "position": "Software Engineer",
+      "startDate": "August 2024",
+      "endDate": "present",
+      "technologies": [
+        {
+          "name": "HTML5",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        },
+        {
+          "name": "CSS3",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        },
+        {
+          "name": "Typescript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "React",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        },
+        {
+          "name": "Material UI",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+        },
+        {
+          "name": "Nestjs",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+        },
+        {
+          "name": "Redis",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+        },
+        {
+          "name": "Azure",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+        },
+        {
+          "name": "Github",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+        },
+        {
+          "name": "Github Actions",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+        },
+        {
+          "name": "Docker",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+        },
+        {
+          "name": "Trello",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg"
+        }
+      ]
+    },
+    {
       "id": "llab",
       "name": "LLab",
       "description": "• Enhanced order and customer management efficiency by 25% through the development of a dynamic web application.Leveraged HTML, CSS, and TypeScript (Angular framework) to seamlessly interact with REST APIs, ensuring real-time data synchronisation. Translated into a streamlined process, boosting overall productivity and user satisfaction.\n• Elevated user experiences by 30% through innovative development, harmonising coding proficiency with Figma for UI/UX design. Introduced creative solutions, measured through increased user engagement and satisfaction. Achieved a visually stunning user interface, resulting in heightened product appeal and a positive impact on user interactions.\n• Mastered frontend issue resolution, showcasing adept problem-solving skills. Methodically documented the development process, emphasising and implementing best practices in frontend technology. This meticulous documentation not only resolved challenges promptly but also contributed to an increase in overall system stability and efficiency.\n• Collaborated with a team of 3 members to effectively overcome project challenges, leading to streamlined processes and accelerated timelines.",
       "location": "Ho Chi Minh city, Vietnam",
       "logo": "llab-logo.png",
       "position": "Frontend Developer",
-      "startDate": "July 2020",
-      "endDate": "present",
+      "startDate": "July 2022",
+      "endDate": "August 2024",
       "technologies": [
         {
           "name": "HTML5",
@@ -605,7 +697,7 @@
           "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
         },
         {
-          "name": "Dcoker",
+          "name": "Docker",
           "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
         },
         {

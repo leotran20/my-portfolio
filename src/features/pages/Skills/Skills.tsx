@@ -10,6 +10,10 @@ const Skills = () => {
 
     const skillConfig = [
         {
+            title: 'Programming Languages',
+            keyword: 'programming_language'
+        },
+        {
             title: 'Front End',
             keyword: 'frontend'
         },
@@ -24,7 +28,15 @@ const Skills = () => {
         {
             title: 'Development Tools',
             keyword: 'development'
+        },
+        {
+            title: 'Cloud & Container Orchestration',
+            keyword: 'cloud_platform'
+        }, {
+            title: 'CI/CD Tools',
+            keyword: 'ci_cd'
         }
+
     ];
     return (
         <div id="skills" className="mb-32">
